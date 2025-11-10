@@ -15,7 +15,7 @@ Although there are inputs on the DETDFFs called "CLK", the application this circ
 
 ## How to test
 
-This circuit does not make any use of the provided clock input, only the piano input switches and the RST_N button. The outputs, Q, of the DETDFFs and their complements, QN, are shown on the 7-segment display.
+This circuit does not make any use of the provided clock input, only the piano input switches and the RST_N button. The design won't build properly with a floating clock so there is a bogus inverter in the design not connected to anything to get the Github Actions to pass. The outputs, Q, of the DETDFFs and their complements, QN, are shown on the 7-segment display:
 
 ```
 DETDFF0 (D0 / IN0, CLK0 / IN1) -> Q0  (Top Segment          /  A)
